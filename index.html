@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>casasavasana</title>
+
+  <!-- Fonts (more boutique-hotel) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#listings">Skip to listings</a>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-row">
+      <a class="logo" href="#top" aria-label="casasavasana home">
+        <span class="logo-text">casasavasana</span>
+        <span class="logo-sub">coastal rooms</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a class="nav-link" href="#listings">Rooms</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="btn btn-small btn-primary header-btn" href="#listings">View Rooms</a></li>
+          <li><a class="btn btn-small btn-outline header-btn" href="#contact">Inquire</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero (hotel-style image + overlay) -->
+  <section class="hero" aria-label="Intro">
+    <div class="hero-media" role="img" aria-label="Ocean and coastal landscape"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="kicker">A coastal stay</p>
+        <h1 class="hero-title">Unwind by the ocean at casasavasana.</h1>
+        <p class="hero-subtitle">
+          Five thoughtfully designed rooms with an easy, direct way to book. Simple, quiet, and welcoming.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#listings">Explore Rooms</a>
+          <a class="btn btn-outline" href="#contact">Contact</a>
+        </div>
+
+        <ul class="hero-highlights" aria-label="Highlights">
+          <li>Walkable to the coast</li>
+          <li>Clean, bright interiors</li>
+          <li>Fast Wi-Fi + quiet hours</li>
+        </ul>
+      </div>
+
+      <!-- “Boutique hotel” info panel -->
+      <aside class="hero-panel" aria-label="Quick details">
+        <div class="panel-row">
+          <div class="panel-item">
+            <span class="panel-label">Rooms</span>
+            <span class="panel-value">5</span>
+          </div>
+          <div class="panel-item">
+            <span class="panel-label">Check-in</span>
+            <span class="panel-value">3 PM</span>
+          </div>
+          <div class="panel-item">
+            <span class="panel-label">Check-out</span>
+            <span class="panel-value">11 AM</span>
+          </div>
+        </div>
+
+        <div class="panel-divider" aria-hidden="true"></div>
+
+        <p class="panel-note">
+          Want availability? Send your dates and the room name — we&apos;ll reply quickly.
+        </p>
+
+        <div class="panel-actions">
+          <a class="btn btn-small btn-primary" href="#contact">Ask about dates</a>
+          <a class="btn btn-small btn-outline" href="#listings">See rooms</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Listings -->
+  <section class="listings" id="listings" aria-label="Room listings">
+    <div class="container">
+      <header class="section-head">
+        <div>
+          <h2>Rooms</h2>
+          <p class="section-subtitle">A small collection of peaceful rooms — each with its own feel.</p>
+        </div>
+      </header>
+
+      <div class="room-grid">
+        <!-- Room 1 -->
+        <article class="room-card">
+          <div class="room-top">
+            <h3 class="room-title">Room 1</h3>
+            <span class="room-price">From $— / night</span>
+          </div>
+          <p class="room-meta">Queen • Private bath • Workspace</p>
+
+          <div class="amenities" aria-label="Amenities">
+            <span class="chip">Fast Wi-Fi</span>
+            <span class="chip">Natural light</span>
+            <span class="chip">Fresh linens</span>
+          </div>
+
+          <p class="room-desc">
+            Bright and airy with soft coastal tones — great for longer stays and morning coffee.
+          </p>
+
+          <div class="room-actions">
+            <a class="btn btn-small btn-primary" href="#contact">Inquire</a>
+<!--             <a class="btn btn-small btn-outline" href="#contact">Availability</a>
+ -->          </div>
+        </article>
+
+        <!-- Room 2 -->
+        <article class="room-card">
+          <div class="room-top">
+            <h3 class="room-title">Room 2</h3>
+            <span class="room-price">From $— / night</span>
+          </div>
+          <p class="room-meta">Full • Shared bath • Cozy</p>
+
+          <div class="amenities" aria-label="Amenities">
+            <span class="chip">Reading nook</span>
+            <span class="chip">Quiet hours</span>
+            <span class="chip">Soft lighting</span>
+          </div>
+
+          <p class="room-desc">
+            A calm, compact room that&apos;s simple and comfortable — perfect for a light, easy stay.
+          </p>
+
+          <div class="room-actions">
+            <a class="btn btn-small btn-primary" href="#contact">Inquire</a>
+<!--             <a class="btn btn-small btn-outline" href="#contact">Availability</a>
+ -->          </div>
+        </article>
+
+        <!-- Room 3 -->
+        <article class="room-card">
+          <div class="room-top">
+            <h3 class="room-title">room 3</h3>
+            <span class="room-price">From $— / night</span>
+          </div>
+          <p class="room-meta">King • Private bath • Extra space</p>
+
+          <div class="amenities" aria-label="Amenities">
+            <span class="chip">Lounge chair</span>
+            <span class="chip">Morning sun</span>
+            <span class="chip">Spacious</span>
+          </div>
+
+          <p class="room-desc">
+            Warm and open with room to breathe — ideal if you like a spacious, boutique feel.
+          </p>
+
+          <div class="room-actions">
+            <a class="btn btn-small btn-primary" href="#contact">Inquire</a>
+<!--             <a class="btn btn-small btn-outline" href="#contact">Availability</a>
+ -->          </div>
+        </article>
+
+        <!-- Room 4 -->
+        <article class="room-card">
+          <div class="room-top">
+            <h3 class="room-title">Room 4</h3>
+            <span class="room-price">From $— / night</span>
+          </div>
+          <p class="room-meta">Twin • Shared bath • Minimal</p>
+
+          <div class="amenities" aria-label="Amenities">
+            <span class="chip">Budget-friendly</span>
+            <span class="chip">Simple storage</span>
+            <span class="chip">Quiet zone</span>
+          </div>
+
+          <p class="room-desc">
+            Minimal and sweet — great if you&apos;re out exploring and just want a restful place to land.
+          </p>
+
+          <div class="room-actions">
+            <a class="btn btn-small btn-primary" href="#contact">Inquire</a>
+<!--             <a class="btn btn-small btn-outline" href="#contact">Availability</a>
+ -->          </div>
+        </article>
+
+        <!-- Room 5 -->
+        <article class="room-card">
+          <div class="room-top">
+            <h3 class="room-title">Room 5</h3>
+            <span class="room-price">From $— / night</span>
+          </div>
+          <p class="room-meta">Queen • Private bath • Cozy</p>
+
+          <div class="amenities" aria-label="Amenities">
+            <span class="chip">Blackout curtains</span>
+            <span class="chip">Soft bedding</span>
+            <span class="chip">Evening calm</span>
+          </div>
+
+          <p class="room-desc">
+            Quiet, cozy, and designed for deep rest — mellow lighting, soft textures, and a calm vibe.
+          </p>
+
+          <div class="room-actions">
+            <a class="btn btn-small btn-primary" href="#contact">Inquire</a>
+<!--             <a class="btn btn-small btn-outline" href="#contact">Availability</a>
+ -->          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact" aria-label="Contact">
+    <div class="container">
+      <header class="section-head">
+        <div>
+          <h2>Contact</h2>
+          <p class="section-subtitle">Send your dates + preferred room name. We&apos;ll respond with availability.</p>
+        </div>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3 class="contact-title">Reach us directly</h3>
+          <p class="fine-print">Replace the placeholders with your real phone + email.</p>
+
+          <div class="contact-lines" role="list">
+            <div class="contact-line" role="listitem">
+              <span class="contact-label">Phone</span>
+              <a class="contact-value" href="tel:+10000000000">(000) 000-0000</a>
+            </div>
+            <div class="contact-line" role="listitem">
+              <span class="contact-label">Email</span>
+              <a class="contact-value" href="mailto:hello@casasavasana.com">hello@casasavasana.com</a>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:hello@casasavasana.com">Email Us</a>
+            <a class="btn btn-outline" href="tel:+10000000000">Call</a>
+          </div>
+        </div>
+
+        <div class="contact-card contact-card--soft">
+          <h3 class="contact-title">What to include</h3>
+          <ul class="checklist">
+            <li>Room name</li>
+            <li>Dates (start + end)</li>
+            <li>Number of guests</li>
+            <li>Any questions or needs</li>
+          </ul>
+          <p class="fine-print">
+            We keep it simple — direct communication, no complicated forms.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <p class="footer-title">casasavasana</p>
+        <p class="footer-summary">
+          Five coastal rooms • Direct inquiries • Phone + email • Check-in 3 PM / Check-out 11 AM
+        </p>
+      </div>
+
+      <ul class="footer-links" aria-label="Footer links">
+        <li><a href="#top">Top</a></li>
+        <li><a href="#listings">Rooms</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year">2025</span> casasavasana. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
