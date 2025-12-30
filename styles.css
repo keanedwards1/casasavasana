@@ -761,3 +761,101 @@ section{ padding: 3.6rem 0; }
   html{ scroll-behavior:auto; }
   .btn{ transition:none; }
 }
+
+/* ===========================
+   Things To Do (integrates with your existing section-head + container)
+   =========================== */
+
+.things-to-do{
+  background:
+  rgba(255,255,255,.86)
+/*     radial-gradient(900px 360px at 18% 0%, rgba(15,130,201,.10), transparent 55%),
+    linear-gradient(180deg, rgba(255,255,255,.86), rgba(251,244,234,.86)); */
+}
+
+/* The list becomes “hotel cards” */
+.things-list{
+  list-style:none;
+  padding:0;
+  margin: 1.25rem 0 0;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
+}
+
+/* Each item styled like a refined info card */
+.things-list li{
+  background: rgba(255,255,255,.9);
+  border: 1px solid rgba(0,0,0,.07);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 1.15rem 1.2rem;
+  color: rgba(34,34,34,.84);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle ocean accent stripe */
+.things-list li::before{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 0;
+  width: 6px;
+  background: linear-gradient(180deg, var(--sea), var(--deep));
+  opacity: .9;
+}
+
+/* Keep the strong title elegant */
+.things-list strong{
+  display:block;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.15;
+  letter-spacing: .01em;
+  color: var(--deep);
+  margin-left: .35rem; /* offsets the accent stripe a bit */
+}
+
+/* Description text (your em dash line) */
+.things-list li{
+  line-height: 1.55;
+}
+
+/* Make the link feel like a neat “pill” */
+.things-list a{
+  display:inline-flex;
+  align-items:center;
+  gap:.35rem;
+  margin-top: .75rem;
+  padding: .45rem .65rem;
+  border-radius: 999px;
+  background: rgba(11,95,168,.08);
+  border: 1px solid rgba(11,95,168,.12);
+  color: var(--deep);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .92rem;
+  margin-left: .35rem; /* align with strong */
+}
+
+.things-list a:hover{
+  background: rgba(11,95,168,.12);
+  text-decoration: none;
+}
+
+/* Nice keyboard focus */
+.things-list a:focus-visible{
+  outline: 3px solid color-mix(in oklab, var(--sea) 45%, white);
+  outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .things-list{ grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 720px){
+  .things-list{ grid-template-columns: 1fr; }
+}
+
